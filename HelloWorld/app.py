@@ -184,3 +184,24 @@ if good_credit:
 else:
     down_payment = 0.2 * cost
 print(f"Down Payment: ${down_payment}")
+
+# Logical Operators
+has_high_income = False
+has_good_credit = True
+# Using the 'and' operator to see if both of these conditionals are true to run code
+if has_good_credit and has_high_income:
+    print("Eligible for loan")
+# Using the "or" operator one of the conditionals needs to be true in order to run the code.
+if has_high_income or has_good_credit:
+    print('Eligible for loan')
+# AND: both needs to match
+# OR: only one needs to pass
+# NOT inverse the value given
+has_criminal_record = True
+# This will fire because the not will change this to true
+if has_good_credit and not has_criminal_record:
+    print("Eligible for loan ")
+else:
+    print("I'm sorry you are not eligible for the loan")
+
+
