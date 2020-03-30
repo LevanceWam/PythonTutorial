@@ -31,3 +31,22 @@ print('Hi ' + new_name)
 ask_name = input('What is your name buddy? ')
 ask_color = input ('What is your favorite color guy? ')
 print(ask_name + ' loves ' + ask_color)
+
+# Type conversion
+birth_year = input('Birth Year: ')
+print(type(birth_year))
+# int() turns a string into a integer
+# float() turns a string into a number with a decimal
+# bool() turns a string into a boolean value
+# type() let's you know what kind of variable you have
+current_age = 2020 - int(birth_year)
+print(type(current_age))
+print(current_age)
+
+# Ask for the users weight (nicely) and convert it to kilograms
+weight = input('What is your weight in pounds? ')
+kilogram = int(weight) * 0.45
+print(type(kilogram))
+print(' Your converted weight is: ', kilogram, 'kg')
+
+# Strings
