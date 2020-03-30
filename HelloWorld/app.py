@@ -8,6 +8,7 @@ print('*' * 10)
 
 # price will change because it goes from top to bottom and it goes from the last declared so it will print 20
 price = 10
+print(price)
 price = 20
 rating = 4.9
 name = 'vance'
@@ -22,16 +23,16 @@ lastName = 'Smith'
 age = 20
 new_patient = True
 
-print('Patient Info: ', firstName, lastName, age, 'is a new patient', new_patient)
+print(f'Patient Info: {firstName} {lastName} age: {age}, is a new patient: {new_patient}')
 
 # input is python's way of asking questions
 new_name = input('What is your name? ')
-print('Hi ' + new_name)
+print(f'Hi {new_name}')
 
 # Create 2 prompts asking the user's name and favorite color
 
 ask_name = input('What is your name buddy? ')
-ask_color = input ('What is your favorite color guy? ')
+ask_color = input('What is your favorite color guy? ')
 print(ask_name + ' loves ' + ask_color)
 
 # Type conversion
@@ -108,7 +109,7 @@ print(course3.lower())
 # We can find a characters index by using .find
 print(course3.find('P'))
 # lets use the .replace method *note that this is a very case sensitve method
-print(course3.replace('Beginnners', 'Absolute Beginners'))
+print(course3.replace('Beginners', 'Absolute Beginners'))
 print(course3.replace('P', 'J'))
 # Checking for the existence of characters in the string *note this is also very case sensitive
 # the "in" operator produces a boolean value, Do we have it or not
@@ -179,8 +180,7 @@ print("Enjoy your day")
 cost = 1000000
 good_credit = True
 if good_credit:
-   down_payment = 0.1 * cost
+    down_payment = 0.1 * cost
 else:
     down_payment = 0.2 * cost
 print(f"Down Payment: ${down_payment}")
-
