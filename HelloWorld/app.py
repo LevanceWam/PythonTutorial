@@ -84,6 +84,39 @@ print(new_name[1:-1])
 # I was wrong it took out the first and last indexes
 
 # Formatted Strings
+first_name = 'Johnny'
+last_name = 'Walker'
+# This is not the ideal way to do this
+message = first_name + ' [' + last_name + '} is a coder'
+# let's try this with a formatted string.
+# formatted strings start with a f like below
+# the curly braces acts as placeholders for the variables we want to add into the string
+msg = f'{first_name} [{last_name}] is a coder'
+print(message)
+print(msg)
+
+# String Method
+course3 = 'Python for Beginners'
+# len() gives you the number of characters in a string
+print(len(course3))
+# .upper will make the string all caps
+print(course3.upper())
+# .lower will make the string lower case
+print(course3.lower())
+# We can find a characters index by using .find
+print(course3.find('P'))
+# lets use the .replace method *note that this is a very case sensitve method
+print(course3.replace('Beginnners', 'Absolute Beginners'))
+print(course3.replace('P', 'J'))
+# Checking for the existence of characters in the string *note this is also very case sensitive
+# the "in" operator produces a boolean value, Do we have it or not
+print('Python' in course)
+
+# Arithmetic Operations
+
+
+
+
 
 
 
