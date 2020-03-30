@@ -1,3 +1,5 @@
+import math
+
 print("Hello world Vance is here")
 print('o-------')
 print(' |||||')
@@ -146,6 +148,19 @@ y = (2 + 3) * 10 - 3
 # this should equal 47
 print(y)
 # I was correct
+
+# Math Functions
+r = 2.9
+print(round(r))
+# abs will always give a positive number
+print(abs(-2.9))
+# lets use math instead
+# math ceil will round up
+print(math.ceil(r))
+# math.floor will round down
+print(math.floor(r))
+
+# If Statements
 
 
 
