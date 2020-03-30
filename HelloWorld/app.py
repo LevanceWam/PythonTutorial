@@ -110,7 +110,7 @@ print(course3.replace('Beginnners', 'Absolute Beginners'))
 print(course3.replace('P', 'J'))
 # Checking for the existence of characters in the string *note this is also very case sensitive
 # the "in" operator produces a boolean value, Do we have it or not
-print('Python' in course)
+print('Python' in course3)
 
 # Arithmetic Operations
 # Division and Modules
@@ -121,16 +121,31 @@ print(10 // 3)
 print(10 % 3)
 # exponent or the power to
 print(10 ** 3)
-
-# Augmented assigned operator (shorthand
+# Augmented assigned operator (shortcuts to writing the equations)
 x = 10
 x = x + 3
 print(x)
 # this is the same as line 127
 x += 3
+print(x)
 # Now lets subtract
 x -= 3
+print(x)
 
+# Operator Precedence
+y = 10 + 3 * 2
+# will equal 16
+print(y)
+# order that the operators will go
+# parenthesis (priority)
+# exponenation (2**3)
+# multiplication or division
+# addition or subtraction
+
+y = (2 + 3) * 10 - 3
+# this should equal 47
+print(y)
+# I was correct
 
 
 
