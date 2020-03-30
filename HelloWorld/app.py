@@ -113,9 +113,23 @@ print(course3.replace('P', 'J'))
 print('Python' in course)
 
 # Arithmetic Operations
+# Division and Modules
+# if we add 2 slashes we will get the whole number only not the decimal
+print(10 / 3)
+print(10 // 3)
+# module will return the reminder of the divison
+print(10 % 3)
+# exponent or the power to
+print(10 ** 3)
 
-
-
+# Augmented assigned operator (shorthand
+x = 10
+x = x + 3
+print(x)
+# this is the same as line 127
+x += 3
+# Now lets subtract
+x -= 3
 
 
 
