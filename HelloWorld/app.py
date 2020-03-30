@@ -204,4 +204,24 @@ if has_good_credit and not has_criminal_record:
 else:
     print("I'm sorry you are not eligible for the loan")
 
+# Comparison Operators
+temperature = 30
+if temperature > 30:
+    print("It's a hot day")
+else:
+    print("It's not a hot day")
+# == means if equal to if we were to use = instead we would be changing the value
+# != not equal to
+# >= greater than or equal to
+# <= less than or equal to
 
+# Exercise create a character length checker for a minimum of 3 and a maximum of 50
+name_length = input('What is your name ')
+if len(name_length) < 3:
+    print('Sorry it must be 3 or more characters long')
+    print('please try again')
+elif len(name_length) > 50:
+    print('Sorry it has to 50 characters or less')
+    print('Please try again')
+else:
+    print(f'Hey {name_length}, your name has been accepted.')
