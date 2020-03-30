@@ -225,3 +225,15 @@ elif len(name_length) > 50:
     print('Please try again')
 else:
     print(f'Hey {name_length}, your name has been accepted.')
+
+# Exercise 2 we will take a person's weight and convert it to lbs or kg
+ask_weight = input('Weight: ')
+unit = input('(L)bs or (K)g: ')
+if 'k' in unit or 'K' in unit:
+    kg_weight = int(ask_weight) / 0.45
+    print(f'You are {kg_weight}kg')
+elif 'l' in unit or "L" in unit:
+    lbs_weight = int(ask_weight) * 0.45
+    print(f'You are {lbs_weight}lbs')
+else:
+    print(f' You entered {ask_weight} but forgot to chose a conversion')
