@@ -49,7 +49,7 @@ print(current_age)
 weight = input('What is your weight in pounds? ')
 kilogram = int(weight) * 0.45
 print(type(kilogram))
-print(' Your converted weight is: ', kilogram, 'kg')
+print(f"Your converted weight is: {kilogram}kg ")
 
 # Strings
 # strings for multiple length example tripe quotes
@@ -161,6 +161,26 @@ print(math.ceil(r))
 print(math.floor(r))
 
 # If Statements
+is_hot = False
+is_cold = False
+if is_hot:
+    print("It's a hot day")
+    print("Drink Plenty of water")
+# shorthand for else if
+elif is_cold:
+    "It's a cold day"
+    "Wear warm clothes"
+else:
+    print("It's a Lovely day")
 
+print("Enjoy your day")
 
+# Exercise Let's see if you have good credit or bad.
+cost = 1000000
+good_credit = True
+if good_credit:
+   down_payment = 0.1 * cost
+else:
+    down_payment = 0.2 * cost
+print(f"Down Payment: ${down_payment}")
 
