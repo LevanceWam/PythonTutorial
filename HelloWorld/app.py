@@ -55,7 +55,7 @@ print(f"Your converted weight is: {kilogram}kg ")
 # Strings
 # strings for multiple length example tripe quotes
 course = '''
-Hi Vance, 
+Hi Vance,
 
 Here is our first email to you.
 
@@ -302,7 +302,7 @@ while True or command != "quit":
             print("Car stopped")
     elif command == 'help':
         print('''
-start - to start the car 
+start - to start the car
 stop - to stop the car
 quit - to quit
         ''')
@@ -312,3 +312,25 @@ quit - to quit
         break
 else:
     print("Sorry, I don't understand that!")
+
+# For Loops
+for item in ['Mosh', 'vance', 'Vancy']:
+    print(item)
+# will start at 0 end at 9
+for item in range(10):
+    print(item)
+# Will start from 5 and end at 9
+for item in range(5, 10):
+    print(item)
+# Will start from 5 and go up by 2s
+for item in range(5, 10, 2):
+    print(item)
+
+# Exercise 1 Create a for loop that calculates all the prices in the list
+prices = [10, 20, 30]
+total = 0
+for item in prices:
+    total += item
+print(total)
+
+
