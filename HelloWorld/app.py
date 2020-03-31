@@ -247,14 +247,68 @@ while i <= 5:
 print('Done')
 
 # guessing game
+# set the number that the user needs to get correct
 secret_number = 9
 guess_count = 0
+# The amount of time the user is allowed to guess
 guess_limit = 3
 while guess_count < guess_limit:
     guess = int(input('Guess: '))
     guess_count += 1
     if guess == secret_number:
         print('You won!')
+        # this stops the gsme form continung
         break
 else:
     print('Sorry you failed')
+
+# car game
+# My Attempt
+# car_start = 'Car started...Ready to go!'
+# car_stop = 'Car stopped'
+# car_try = 0
+# car_limit = 7
+# while car_try < car_limit:
+#     car_try += 1
+#     car_action = input('>')
+#     if car_action.lower() == 'help':
+#         print('start - start the car')
+#         print('stop - stop the car')
+#         print('quit - to exit')
+#     elif car_action.lower() == 'start':
+#         print(car_start)
+#     elif car_action.lower() == 'stop':
+#         print(car_stop)
+#     elif car_action.lower() == 'quit':
+#         break
+# else:
+#     print(f'Goodbye {car_stop}')
+# Shorten version
+command = ""
+started = False
+while True or command != "quit":
+    command = input("> ").lower()
+    if command == "start":
+        if started:
+            print('Car is already started!')
+        else:
+            started = True
+            print("Car started...")
+    elif command == "stop":
+        if not started:
+            print(" Car is already stopped!")
+        else:
+            started = False
+            print("Car stopped")
+    elif command == 'help':
+        print('''
+start - to start the car 
+stop - to stop the car
+quit - to quit
+        ''')
+    elif "start" in command:
+        print('car is already started')
+    elif command == "quit":
+        break
+else:
+    print("Sorry, I don't understand that!")
