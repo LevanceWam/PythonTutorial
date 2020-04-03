@@ -397,3 +397,42 @@ matrix[2][0] = 79
 for row in matrix:
     for item in row:
         print(item)
+
+# List Methods
+numbs2 = [2, 6, 7, 1, 11, 2]
+# count lets us know how many of something is in the index
+print(numbs2.count(2))
+# remove the last item in the list
+numbs2.pop()
+print(numbs2)
+# How to check to see if an item is in the index
+print(numbs2.index(6))
+# we can also use in
+print(11 in numbs2)
+# Add stuff to the end of the list
+numbs2.append(20)
+print(numbs2)
+# with insert we can choose where we want the new index to go exactly
+numbs2.insert(1, 69)
+print(numbs2)
+# lets sort the numbers in the list for smallest to biggest
+numbs2.sort()
+print(numbs2)
+# print the numbers backwards
+numbs2.reverse()
+print(numbs2)
+# Remove item
+numbs2.remove(6)
+print(numbs2)
+# Remove all the items in the list
+numbs2.clear()
+print(numbs2)
+
+# Exercise create a program that removes duplicates from a list
+
+numbs3 = [4, 4, 5, 5, 6, 8, 8]
+duplicates = []
+for x in numbs3:
+    if x not in duplicates:
+        duplicates.append(x)
+print(duplicates)
