@@ -333,4 +333,25 @@ for item in prices:
     total += item
 print(total)
 
+# Nested Loops
+for x in range(4):
+    for y in range(3):
+        print(f'({x}, {y})')
 
+# Exercise using nested loops to create a F using *
+numbers = [5, 2, 5, 2, 2]
+for x_count in numbers:
+    output = ''
+    for counts in range(x_count):
+        output += 'x'
+    print(output)
+# This is the short cheating ways
+for x in numbers:
+    print('x' * x)
+# Let's make this into a L
+numbers2 = [2, 2, 2, 5, 5]
+for y_count in numbers2:
+    output = ''
+    for counts in range(y_count):
+        output += 'x'
+    print(output)
