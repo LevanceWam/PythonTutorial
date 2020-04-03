@@ -382,4 +382,18 @@ for x in numbs:
         max_number = x
 print(max_number)
 
-
+# 2D Lists
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+# Access individual items in the index
+# So the first [] will select the list in the matrix and the second will get the index we choose
+print(f'Hey you pulled {matrix[1][2]} out of the matrix')
+# We can also change an index value
+matrix[2][0] = 79
+# We are going to use a nested loop to iterate over all the items in the matrix
+for row in matrix:
+    for item in row:
+        print(item)
