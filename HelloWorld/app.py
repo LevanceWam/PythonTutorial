@@ -442,4 +442,15 @@ print(duplicates)
 # We csn only get information from a tuple not change it
 numbs4 = (1, 2, 3)
 print(numbs4[0])
+# tuples are useful when you make a list you want to make sure you can not change
+
+# Unpacking
+coordinates = (1, 2, 3)
+# coord1 = coordinates[0]
+# coord2 = coordinates[1]
+# coord3 = coordinates[2]
+# this is the same as the above
+coord1, coord2, coord3 = coordinates
+print(coord3)
+# you can also use this feature with regular list
 
