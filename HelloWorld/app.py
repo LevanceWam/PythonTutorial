@@ -436,3 +436,10 @@ for x in numbs3:
     if x not in duplicates:
         duplicates.append(x)
 print(duplicates)
+
+# Tuples
+# are like list we can store items but we can not change them
+# We csn only get information from a tuple not change it
+numbs4 = (1, 2, 3)
+print(numbs4[0])
+
