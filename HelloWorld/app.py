@@ -497,3 +497,15 @@ outpost = ""
 for ch in phones:
     outpost += digits.get(ch, "!") + " "
 print(outpost)
+
+# Emoji Converter :)
+messages = input("> ")
+words = messages.split(" ")
+emojis = {
+    ":)": "😂",
+    "<3": "❤️"
+}
+output1 =""
+for word in words:
+    output1 += emojis.get(word, word) + " "
+print(output1)
