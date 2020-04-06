@@ -439,7 +439,7 @@ print(duplicates)
 
 # Tuples
 # are like list we can store items but we can not change them
-# We csn only get information from a tuple not change it
+# We can only get information from a tuple not change it
 numbs4 = (1, 2, 3)
 print(numbs4[0])
 # tuples are useful when you make a list you want to make sure you can not change
@@ -454,3 +454,46 @@ coord1, coord2, coord3 = coordinates
 print(coord3)
 # you can also use this feature with regular list
 
+# Dictionaries
+# We store information in key value pairs
+
+# Name: John Smith
+# Email: John@gmail.com
+# Phone: 2464
+
+customer = {
+    "name": "John Smith",
+    "age": 30,
+    "is_verified": True
+}
+
+print(customer.get("name"))
+# If it is not in there one way to put it in is
+print(customer.get("birthdate", "Jan 1 1980"))
+# add value
+customer["birthdate"] = "Jan 1 1989"
+
+# exercise create a program that will take numbers and type out their names
+# My attempt
+phones = input("Phone: ")
+digits = {
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four"
+}
+for x in phones:
+    digits.get(x)
+    if x == "1":
+        print(digits.get("1"))
+    elif x == "2":
+        print(digits.get("2"))
+    elif x == "3":
+        print(digits.get("3"))
+    else:
+        print(digits.get("4"))
+# Short version
+outpost = ""
+for ch in phones:
+    outpost += digits.get(ch, "!") + " "
+print(outpost)
