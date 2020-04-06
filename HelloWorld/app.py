@@ -540,3 +540,21 @@ def square(number3):
 
 
 print(square(3))
+
+
+# Exercise make the emoji converter in to a function
+# My attempt
+def emoji_converter(mess):
+    words2 = mess.split(" ")
+    emojis2 = {
+        ":)": "😬",
+        "<3": "❤️"
+    }
+    output2 = ""
+    for word1 in words2:
+        output2 += emojis2.get(word1, word1) + " "
+    return output2
+
+
+mess1 = input(">")
+print(emoji_converter(mess1))
