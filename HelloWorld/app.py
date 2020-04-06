@@ -505,7 +505,7 @@ emojis = {
     ":)": "😂",
     "<3": "❤️"
 }
-output1 =""
+output1 = ""
 for word in words:
     output1 += emojis.get(word, word) + " "
 print(output1)
@@ -569,3 +569,30 @@ except ZeroDivisionError:
     print("Age can not be 0")
 except ValueError:
     print('Invalid value')
+
+# Comments
+#  Mainly used for notes in the code or to help others understand why you wrote the code the way you did
+
+
+# Classes
+# we captialize the words pascal method
+# we use classes to define new types, the types can have methods that we define in the body of the class
+# they can also have attributes that we can define anywhere in the program
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+point1 = Point()
+point1.x = 10
+point1.y = 20
+print(point1.x)
+point1.draw()
+
+point2 = Point()
+# Each object is a different instance of the class that's why it not the same as the one above
+point2.x = 1
+print(point2.x)
