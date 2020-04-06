@@ -558,3 +558,14 @@ def emoji_converter(mess):
 
 mess1 = input(">")
 print(emoji_converter(mess1))
+
+# Expections
+try:
+    age2 = int(input('Age: '))
+    income = 20000
+    risk = income / age2
+    print(age2)
+except ZeroDivisionError:
+    print("Age can not be 0")
+except ValueError:
+    print('Invalid value')
