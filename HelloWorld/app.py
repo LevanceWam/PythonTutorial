@@ -532,3 +532,11 @@ def greet_user2(f_name, l_name):
 
 greet_user2("Vance", "Wamley")
 greet_user2("Mary", "William")
+
+
+# Return statements
+def square(number3):
+    return number3 * number3
+
+
+print(square(3))
