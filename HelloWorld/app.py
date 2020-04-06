@@ -509,3 +509,26 @@ output1 =""
 for word in words:
     output1 += emojis.get(word, word) + " "
 print(output1)
+
+
+# Functions (continuing from emoji converter
+def greet_user():
+    print('Hi There!')
+    print('Welcome aboard')
+
+
+print('start')
+greet_user()
+print('finish')
+
+
+# Parameters
+# Parameters receives information
+# agruments are the information that goes in the parameters
+def greet_user2(f_name, l_name):
+    print(f'Hi {f_name, l_name}!')
+    print('Welcome aboard')
+
+
+greet_user2("Vance", "Wamley")
+greet_user2("Mary", "William")
