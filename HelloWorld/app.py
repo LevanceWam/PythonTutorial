@@ -574,11 +574,16 @@ except ValueError:
 #  Mainly used for notes in the code or to help others understand why you wrote the code the way you did
 
 
-# Classes
-# we captialize the words pascal method
-# we use classes to define new types, the types can have methods that we define in the body of the class
-# they can also have attributes that we can define anywhere in the program
+Classes
+we captialize the words pascal method
+we use classes to define new types, the types can have methods that we define in the body of the class
+they can also have attributes that we can define anywhere in the program
 class Point:
+    def __init__(self, x, y):
+        # Self is in reference to the current object
+        self.x = x
+        self.y = y
+
     def move(self):
         print("move")
 
@@ -596,3 +601,25 @@ point2 = Point()
 # Each object is a different instance of the class that's why it not the same as the one above
 point2.x = 1
 print(point2.x)
+
+# Constructors
+# is a function that gets called at the time if creating an object
+point = Point(10, 20)
+print(point.x)
+
+# exercise create a class of person that takes a first and a last name and allows them to talk
+
+class Person:
+    def __init__(self, fullname):
+        self.fullname = fullname
+
+    def talk(self):
+        talk = input("Say something please ")
+        print(f"{self.fullname} said: {talk}")
+
+
+# My attempt
+vance = Person("Vance Wamley")
+vance.talk()
+# Nailed it even went a little beyond the exercise adding user input
+
