@@ -1,4 +1,6 @@
 import math
+import converters
+from converters import lbs_to_kg
 
 print("Hello world Vance is here")
 print('o-------')
@@ -653,3 +655,17 @@ cat1 = Cat()
 cat1.walk()
 cat1.be_annoying()
 
+
+# Modules
+# Used to better organize our code to be used all around
+# Look for file titled converters and import it at the top
+# We can also just call for the method instead of having to print all of the conversion
+lbs_to_kg(100)
+print(converters.kg_to_lbs(70))
+
+# Exercise
+# create a module that will find the biggest number in a list
+# my attempt
+numbs5 = [1, 2, 4, 8, 9]
+converters.max_number(numbs5)
+# success
