@@ -574,15 +574,15 @@ except ValueError:
 #  Mainly used for notes in the code or to help others understand why you wrote the code the way you did
 
 
-Classes
-we captialize the words pascal method
-we use classes to define new types, the types can have methods that we define in the body of the class
-they can also have attributes that we can define anywhere in the program
+# Classes
+# we captialize the words pascal method
+# we use classes to define new types, the types can have methods that we define in the body of the class
+# they can also have attributes that we can define anywhere in the program
 class Point:
-    def __init__(self, x, y):
+    def __init__(self, x1, y2):
         # Self is in reference to the current object
-        self.x = x
-        self.y = y
+        self.x1 = x1
+        self.y2 = y2
 
     def move(self):
         print("move")
@@ -592,9 +592,9 @@ class Point:
 
 
 point1 = Point()
-point1.x = 10
-point1.y = 20
-print(point1.x)
+point1.x1 = 10
+point1.y2 = 20
+print(point1.x1)
 point1.draw()
 
 point2 = Point()
@@ -609,6 +609,7 @@ print(point.x)
 
 # exercise create a class of person that takes a first and a last name and allows them to talk
 
+
 class Person:
     def __init__(self, fullname):
         self.fullname = fullname
@@ -622,4 +623,33 @@ class Person:
 vance = Person("Vance Wamley")
 vance.talk()
 # Nailed it even went a little beyond the exercise adding user input
+
+
+# Inheritance
+class Mammal:
+    def walk(self):
+        print("walk")
+
+
+# Dog will inheritance all the methods in the mammal class
+class Dog(Mammal):
+    # Hey pass this line,Python doesn't like empty classes so this is one way to fix that
+    # pass
+    def bark(self):
+        print("bark")
+
+
+class Cat(Mammal):
+    # pass
+    def be_annoying(self):
+        print("annoying")
+
+
+# Since dog and cat has inherited traits from mammal we can call on the methods from mammal in them
+dog1 = Dog()
+dog1.bark()
+dog1.walk()
+cat1 = Cat()
+cat1.walk()
+cat1.be_annoying()
 
