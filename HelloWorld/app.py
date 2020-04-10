@@ -2,6 +2,7 @@ import math
 import random
 import converters
 from converters import lbs_to_kg
+from pathlib import Path
 
 print("Hello world Vance is here")
 print('o-------')
@@ -713,3 +714,23 @@ class Dice2:
 
 dice = Dice2()
 print(dice.roll2())
+
+# Files and Directories
+# absolute path 'we start from the root of our hard disk
+# /usr/local/bin
+# Relative path 'Start from current directory and go somewhere else
+path = Path("ecommerce")
+print(path.exist)
+# path.mkdir makes a new directory
+# path.rmdir removes a directory
+path2 = Path()
+# this will find all the py files
+print(path2.glob('*.py'))
+# we can search and find all files in all directories
+# if we * which means all files all directories
+# *.* we will get all the files in the current directories
+
+# we will now illiterate through the py files now
+for file in path.glob('*.py'):
+    print(file)
+
