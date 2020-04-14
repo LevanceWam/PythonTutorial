@@ -8,4 +8,4 @@ def index(request):
 
 
 def new(request):
-    return HttpResponse('Welcome this a the new item page')
+    return HttpResponse('New products')
