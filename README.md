@@ -1,6 +1,6 @@
 # PythonTutorial
-Welcome to my Python tutorial series.
-Videos by Mosh Hammedani
+Welcome to my Python tutorial series.<br>
+Videos by Mosh Hammedani<br>
 https://youtu.be/_uQrJ0TkZlc
 
 ## Tools Used
