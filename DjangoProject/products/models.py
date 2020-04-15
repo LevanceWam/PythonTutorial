@@ -1,6 +1,8 @@
 from django.db import models
 
 
+# Here we are creating the tables that will appear in the database
+# We define the attributes for the cells
 class Product(models.Model):
     name = models.CharField(max_length=255)
     price = models.FloatField()
@@ -9,6 +11,6 @@ class Product(models.Model):
 
 
 class Offer(models.Model):
-    code = models.CharField(max_length=10 )
+    code = models.CharField(max_length=10)
     description = models.CharField(max_length=255)
     discount = models.FloatField()
