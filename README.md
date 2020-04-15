@@ -4,6 +4,7 @@ Videos by Mosh Hammedani
 https://youtu.be/_uQrJ0TkZlc
 
 ## Tools Used
+```
 Pycharm
 Anaconda
 Jupyter
@@ -17,7 +18,7 @@ dbsqlite
 Excel
 Github
 Git branches
-
+```
 
 
 ## Hello World
