@@ -42,9 +42,9 @@ This file was a small tutorial on how to use Python to interact with Excel files
 
 This code below is needed to interact with Excel
 
-'''
+```
 pip install openpyxl 
-'''
+```
 
 ## Machine Learning
 
@@ -56,17 +56,17 @@ on what kind of music a person listens too based on age and gender.
 
 First Download Anaconda this will also download jupyter to the project.
 
-'''
+```
 https://www.anaconda.com/distribution/
-'''
+```
 
 Download version mentioned in the video
 
 Then run the next line of code to start a Jupyter notebook
 
-'''
+```
 jupyter notebook
-'''
+```
 
 ## Django Project
 
@@ -76,7 +76,7 @@ The amount of cool thiings that Django is capable of.
 We are shown the admin controls and many other interesting skills.
 
 ### Terminal Commands Used
-'''
+```
  pip install django==2.1  
  django-admin startproject pyshop . 
  python3 manage.py runserver
@@ -84,7 +84,7 @@ We are shown the admin controls and many other interesting skills.
  python3 manage.py makemigrations
  python3 manage.py migrate
  python3 manage.py createsuperuse
- '''
+ ```
 
  # ***IMPORTANT***
 
