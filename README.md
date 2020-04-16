@@ -94,3 +94,7 @@ We are shown the admin controls and many other interesting skills.
 
  The way I solved the issue was deleting the db.sqlite file and restarted the migrations again 
  So keep an eye out for that if that happens
+
+ ## Python Daily
+ Here in the Python daily folder I will be practicing new skills
+ and attempting new projects to keep my self sharp and better myself.
